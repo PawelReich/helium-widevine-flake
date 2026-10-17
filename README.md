@@ -29,8 +29,6 @@ nixpkgs.overlays = [ inputs.helium-widevine.overlays.default ];
 ```nix
 {
   imports = [ inputs.helium-widevine.homeModules.default ];
-
-  programs.helium.enable = true;
 }
 ```
 

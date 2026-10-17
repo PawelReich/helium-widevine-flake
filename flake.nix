@@ -62,8 +62,11 @@
         {
           imports = [ helium-flake.homeModules.default ];
 
-          config = lib.mkIf (config.programs.helium.enable or false) {
-            programs.helium.package = heliumWithWidevine pkgs.system pkgs;
+          config = {
+            programs.helium = {
+              enable = lib.mkDefault true;
+              package = lib.mkDefault (heliumWithWidevine pkgs.system pkgs);
+            };
           };
         };
 

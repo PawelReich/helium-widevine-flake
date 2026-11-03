@@ -14,7 +14,7 @@ Browser will will require a restart after the first launch to properly register 
 
 ```nix
 inputs = {
-  helium-widevine.url = "github:USER/helium-widevine-flake";
+  helium-widevine.url = "github:PawelReich/helium-widevine-flake";
 };
 ```
 
